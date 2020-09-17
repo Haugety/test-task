@@ -1,0 +1,39 @@
+.main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 60px;
+}
+
+.main__content {
+  width: 50%;
+  border-radius: 60px 60px 0 60px;
+  margin-bottom: -90px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@media screen and (max-width: 1160px) {
+
+  .main__content {
+    width: 70%;
+  }
+
+}
+
+@media screen and (max-width: 700px) {
+
+  .main__content {
+    width: 90%;
+  }
+
+}
+
+@media screen and (max-width: 560px) {
+
+  .main__content {
+    width: 100%;
+  }
+
+}

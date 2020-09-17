@@ -1,0 +1,176 @@
+.table {
+  width: 100%;
+  padding: 15px;
+  border-radius: inherit;
+  border-spacing: 10px 10px;
+  background-color: #fff;
+  box-shadow: -10px 20px 40px rgba(96,121,158,.2);
+}
+
+.table__title-row {
+  background: linear-gradient(180deg,#ff6200 13.26%,#ff8000);
+  width: 100%;
+}
+
+.table__task-row {
+  background-color: #fff;
+  width: 100%;
+}
+
+.table__cell {
+  padding: 10px;
+  color: #ff7323;
+  text-align: center;
+  border: 1px solid rgba(255, 115, 35, .7);
+  border-radius: 60px 60px 0 60px;
+  word-break: break-all;
+}
+
+.table__title-row .table__cell {
+  color: #fff;
+}
+
+.table__title-row .table__cell:hover  {
+  opacity: 0.7;
+  cursor: pointer;
+  transition: opacity 0.2s ease-in-out;
+}
+
+.table__title-row .table__cell:not(:hover) {
+  opacity: 1;
+  transition: opacity 0.2s ease-in-out;
+}
+
+.table__task-row .table__cell {
+  border-radius: 60px 0 60px 60px;
+}
+
+.table__cell_id {
+  width: 15%;
+}
+
+.table__cell_date {
+  width: 20%;
+}
+
+.table__cell_options {
+  border: none;
+  width: 15%;
+}
+
+.table__cell_edit-input {
+  width: 90%;
+  outline: none;
+  padding: 5px;
+  color: #fff;
+  background: linear-gradient(180deg,#ff6200 13.26%,#ff8000);
+  border: 1px solid rgba(255, 115, 35, .3);
+  border-radius: 60px 0 60px 60px;
+}
+
+.table__cell_edit-input::placeholder {
+  color: #fff;
+}
+
+.table__cell_options-remove {
+  outline: none;
+  margin-left: 5px;
+  width: 25px;
+  height: 25px;
+  padding: 0;
+  opacity: 0.9;
+  background-color: #ff7323;
+  border: none;
+  border-radius: 50%;
+  background-position: center;
+  background-image: url(../images/Delete.png);
+  background-repeat: no-repeat;
+  box-sizing: content-box;
+}
+
+.table__cell_options-edit {
+  outline: none;
+  width: 25px;
+  height: 25px;
+  padding: 0;
+  opacity: 0.9;
+  background-color: #ff7323;
+  border: none;
+  border-radius: 3px;
+  background-image: url(../images/Edit.png);
+  background-repeat: no-repeat;
+  box-sizing: content-box;
+}
+
+.table__cell_options-edit_save {
+  background-image: url(../images/Save.png);
+}
+
+.table__cell_options-remove:hover, .table__cell_options-edit:hover {
+  opacity: 0.7;
+  cursor: pointer;
+  transition: opacity 0.2s ease-in-out;
+}
+
+.table__cell_options-remove:not(:hover), .table__cell_options-edit:not(:hover) {
+  opacity: 1;
+  transition: opacity 0.2s ease-in-out;
+}
+
+.table__cell_options-edit_save-disabled {
+  background-color: #ffa470;
+}
+
+@media screen and (max-width: 1310px) {
+
+  .table__cell {
+    font-size: 12px;
+  }
+
+  .table__cell_options-remove, .table__cell_options-edit {
+    background-size: contain;
+    width: 20px;
+    height: 20px;
+  }
+
+}
+
+@media screen and (max-width: 1160px) {
+
+  .table__cell_options {
+    padding: 0;
+  }
+
+  .table__cell_options-remove {
+    margin-left: 0;
+    margin-top: 2px;
+  }
+
+}
+
+@media screen and (max-width: 960px) {
+
+  .table__cell_date {
+    font-size: 8px;
+  }
+
+  .table__cell_edit-input {
+    width: 80%;
+  }
+
+}
+
+@media screen and (max-width: 560px) {
+
+  .table__cell {
+    font-size: 8px;
+    padding: 5px;
+  }
+
+  .table__cell_options-remove, .table__cell_options-edit {
+    background-size: contain;
+    width: 15px;
+    height: 15px;
+  }
+
+}

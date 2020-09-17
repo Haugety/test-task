@@ -1,0 +1,26 @@
+.footer {
+  padding: 30px 20px;
+  font-weight: normal;
+  border-radius: 10px;
+  background: linear-gradient(180deg,#ff6200 13.26%,#ff8000);
+}
+
+.footer__text {
+  color: #fff;
+}
+
+@media screen and (max-width: 1160px) {
+
+  .footer__text {
+    font-size: 12px;
+  }
+
+}
+
+@media screen and (max-width: 560px) {
+
+  .footer__text {
+    font-size: 10px;
+  }
+
+}

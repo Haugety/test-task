@@ -1,0 +1,75 @@
+.form {
+  width: 83%;
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: center;
+}
+
+.form__submit {
+  padding: 10px 10px 10px 15px;
+  border: none;
+  background: linear-gradient(180deg,#ff6200 13.26%,#ff8000);
+  color: #fff;
+  font-weight: bold;
+  border-radius: 60px 3px 3px 60px;
+  outline: none;
+  border: 2px solid rgba(255, 115, 35, .5);
+}
+
+.form__submit:hover {
+  cursor: pointer;
+  opacity: 0.8;
+  transition: opacity 0.2s ease-in-out;
+}
+
+.form__submit:not(:hover) {
+  opacity: 1;
+  transition: opacity 0.2s ease-in-out;
+}
+
+.form__submit_disabled {
+  cursor: default;
+  background: white;
+  color: #ff7323;
+  opacity: 0.8;
+  border: 2px solid rgba(255, 115, 35, .2);
+}
+
+.form__task-text {
+  border-radius: 3px;
+  margin: 0 5px;
+}
+
+.form__task-date {
+  border-radius: 3px 60px 60px 3px;
+}
+
+
+.form__task-text, .form__task-date {
+  box-sizing: border-box;
+  outline: none;
+  padding: 10px;
+  border: 2px solid rgba(255, 115, 35, .6);
+  color: #ff7323;
+}
+
+.form__task-text::placeholder, .form__task-date::placeholder {
+  color: #ff7323;
+}
+
+@media screen and (max-width: 960px) {
+
+  .form__submit, .form__task-text, .form__task-date {
+    font-size: 12px;
+  }
+
+}
+
+@media screen and (max-width: 460px) {
+
+  .form__submit, .form__task-text, .form__task-date {
+    font-size: 10px;
+    padding: 5px;
+  }
+
+}

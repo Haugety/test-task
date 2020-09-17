@@ -1,0 +1,29 @@
+.header {
+  padding-bottom: 40px;
+  display: flex;
+}
+
+.header__title-container {
+  background: linear-gradient(180deg,#ff6200 13.26%,#ff8000);
+  padding: 10px 20px;
+  border-radius: 0 60px 60px 60px;
+}
+
+.header__title {
+  max-width: 280px;
+  width: max-content;
+  text-decoration: none;
+  font-size: 50px;
+  font-weight: 500;
+  line-height: 1;
+  color: #fff;
+  outline: none;
+}
+
+@media screen and (max-width: 560px) {
+
+  .header {
+    justify-content: center;
+  }
+
+}
